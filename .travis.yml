@@ -1,5 +1,9 @@
 language: csharp
 solution: WebApplication1.sln
+mono:
+  - latest
+  - 3.12.0
+  - 3.10.0
 
 addons:
   sonarcloud:
@@ -8,8 +12,11 @@ addons:
       secure: "1b94910ffe367b779a28ea1590578a25a4afd7ff"
       
 script:
-  - msbuild /p:Configuration=Release WebApplication1.sln
+  - xbuild /p:Configuration=Release WebApplication1.sln
   - sonar-scanner
+  
+install:
+  - nuget restore WebApplication1.sln
   
 cache:
   directories:
