@@ -8,6 +8,7 @@ addons:
       secure: "1b94910ffe367b779a28ea1590578a25a4afd7ff"
       
 script:
+  - msbuild /p:Configuration=Release WebApplication1.sln
   - sonar-scanner
   
 cache:
