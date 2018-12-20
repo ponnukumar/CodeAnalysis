@@ -17,7 +17,11 @@ namespace WebApplication1.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-            string password = "123kkk";
+            var first=true;
+            if(!first)
+            {
+                ViewBag.Message ="";
+            }
 
             return View();
         }
