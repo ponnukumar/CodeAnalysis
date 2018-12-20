@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-            DataSet ds = new DataSet();
+            string password = "123kkk";
 
             return View();
         }
