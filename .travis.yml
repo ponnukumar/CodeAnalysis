@@ -3,7 +3,7 @@ solution: WebApplication1.sln
 
 addons:
   sonarcloud:
-    organization: "CodeAnalysis"
+    organization: "ponnukumar"
     token:
       secure: "1b94910ffe367b779a28ea1590578a25a4afd7ff"
       
